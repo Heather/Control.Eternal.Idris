@@ -1,0 +1,4 @@
+package Control.Eternal
+
+modules = Operators, Logic
+opts = "-p neweffects --total" 
