@@ -1,4 +1,4 @@
 package Control.Eternal
 
-modules = Operators, Logic
+modules = Operators, Logic, Parse
 opts = "-p neweffects --total" 
