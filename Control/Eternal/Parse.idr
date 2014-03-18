@@ -1,4 +1,4 @@
-module Parse
+module Control.Eternal.Parse
 
 charToInt : Char -> Maybe Int
 charToInt c = let i = cast {to=Int} c in

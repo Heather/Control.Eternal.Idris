@@ -1,4 +1,4 @@
-module Operators
+module Control.Eternal.Operators
 
 infixl 2 <|, |>
 
