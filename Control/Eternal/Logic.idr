@@ -1,10 +1,10 @@
 module Control.Eternal.Logic
 
-ifSo : IO () -> Bool -> IO ()
+ifSo :  Lazy (IO ()) -> Bool -> IO ()
 ifSo = flip when
 
-unless :  Bool -> IO () -> IO ()
+unless :  Bool -> Lazy (IO ()) -> IO ()
 unless a = when $ not a
 
-ifNot : IO () -> Bool -> IO ()
+ifNot : Lazy (IO ()) -> Bool -> IO ()
 ifNot = flip unless
