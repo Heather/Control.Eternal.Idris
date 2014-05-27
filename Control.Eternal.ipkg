@@ -4,4 +4,5 @@ modules = Control.Eternal
     , Control.Eternal.Operators.FSharp, Control.Eternal.Operators.List, Control.Eternal.Operators
     , Control.Eternal.Logic
     , Control.Eternal.Parse
+    , Control.Eternal.System.Process, Control.Eternal.System
 opts = "-p neweffects --total" 
