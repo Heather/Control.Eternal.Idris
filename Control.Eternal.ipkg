@@ -1,4 +1,7 @@
 package Control.Eternal
 
-modules = Control.Eternal, Control.Eternal.Operators, Control.Eternal.Logic, Control.Eternal.Parse
+modules = Control.Eternal
+    , Control.Eternal.Operators.FSharp, Control.Eternal.Operators.List, Control.Eternal.Operators
+    , Control.Eternal.Logic
+    , Control.Eternal.Parse
 opts = "-p neweffects --total" 
