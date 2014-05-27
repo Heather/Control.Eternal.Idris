@@ -14,3 +14,6 @@ infixl 2 #
 
 (#) : List a -> Nat -> Maybe a
 a # n = index' n a
+
+splitOn : Eq a => a -> List a -> List (List a)
+splitOn a = split (== a)
