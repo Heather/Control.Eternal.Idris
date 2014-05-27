@@ -7,6 +7,7 @@ Operators
  - FSharp `<|` `|>` operators
  - various flipped operators
  - `#` alike `!!` in haskell but returns Maybe (more safe ^_^)
+ - splitOn (just alike in Haskell)
 
 System
 ------
