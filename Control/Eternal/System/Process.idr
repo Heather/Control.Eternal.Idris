@@ -14,8 +14,8 @@ readProcess cmd = mkForeign (FFun "readProcess" [FString] FString) cmd
 -- allow silent readProcess
 readProcess' : String -> Bool -> IO String
 readProcess' cmd sh =
-    let fchar : Char = if sh then '1'
-                             else '0'
+    let fchar = chr $ if sh then 1
+                            else 0
     in mkForeign (FFun "readProcessQ" [FString, FChar] FString) cmd fchar
 
 system : String -> IO()
