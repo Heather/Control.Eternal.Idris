@@ -1,10 +1,23 @@
 module Control.Eternal.System.Process
 
-%include C "readProcess.h"
-%link C "readProcess.o"
+{-
+home : String
+home = case getEnv("HOME") of
+        Just home => home
+        _         => "."
 
--- Cannot load './readProcess.so' at compile time because Idris was compiled without libffi support.
--- %dynamic "./readProcess.so"
+readProcessh : String
+readProcessh = home ++ "/.Idris/readProcess.h"
+
+readProcesso : String
+readProcesso = home ++ "/.Idris/readProcess.o"
+        
+%include C readProcessh
+%link    C readProcesso
+-}
+
+%include C "readProcess.h"
+%link    C "readProcess.o"
 
 %language TypeProviders
 

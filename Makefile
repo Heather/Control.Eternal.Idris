@@ -7,7 +7,7 @@ LIBS=readProcess.o
 INCLUDES = -I .
 INSTALL ?= install
 MKDIR ?= $(INSTALL) -d
-BINDIR ?= $(PREFIX)/bin
+IDRISDIR ?= "$(HOME)/.Idris"
 DESTDIR ?=
 
 ctodo: $(CLIBS)
@@ -21,3 +21,7 @@ clean:
 	@echo " --- Clean temp files --- "
 	find . -name '*~' -delete;
 	find . -name '#*#' -delete;
+    
+install:
+	$(MKDIR) $(DESTDIR)$(IDRISDIR)
+	$(INSTALL) $(LIBS) $(DESTDIR)$(IDRISDIR)/
