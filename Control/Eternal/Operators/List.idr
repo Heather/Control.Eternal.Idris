@@ -17,3 +17,6 @@ a # n = index' n a
 
 splitOn : Eq a => a -> List a -> List (List a)
 splitOn a = split (== a)
+
+replaceOn : Eq a => a -> a -> List a -> List a
+replaceOn a b l = map (\c => if c == a then b else c) l
