@@ -10,6 +10,7 @@ Operators
  - splitOn (just alike in Haskell)
  - replaceOn
  - startsWith
+ - isInfixOf
 
 System
 ------
