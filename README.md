@@ -4,11 +4,12 @@ Control.Eternal
 Operators
 ---------
 
- - FSharp `<|` `|>` operators
+ - Pipe `<|` `|>` `<<|` `|>>` operators
  - various flipped operators
  - `#` alike `!!` in haskell but returns Maybe (more safe ^_^)
  - splitOn (just alike in Haskell)
  - replaceOn
+ - startsWith
 
 System
 ------
