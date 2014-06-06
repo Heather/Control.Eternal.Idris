@@ -13,6 +13,7 @@ Operators
  - startsWith
  - isInfixOf
  - natToFloat
+ - round : Float -> Nat
 
 System
 ------
