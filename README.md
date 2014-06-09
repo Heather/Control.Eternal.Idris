@@ -11,7 +11,7 @@ Operators
  - splitLines
  - replaceOn
  - startsWith
- - isInfixOf
+ - isInfixOf (TODO: Implement for Vect)
  - natToFloat
  - round : Float -> Nat
 
