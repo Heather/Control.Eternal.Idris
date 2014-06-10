@@ -1,8 +1,5 @@
 module Control.Eternal.Operators.List
 
-isInfixOf : Eq a => List a -> List a -> Bool
-isInfixOf n h = any (isPrefixOf n) (tails h)
-
 for : List a -> (a -> IO ()) -> IO ()
 for [] f = return ()
 for (x :: xs) f = do f x
