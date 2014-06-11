@@ -1,6 +1,9 @@
 @echo off
-::install
-make
+
+::build & install c
+make & make install & make clean
+
+::build & install idris
 idris --clean Control.Eternal.ipkg
 idris -i "%HOME%/.Idris" --install Control.Eternal.ipkg
 pause

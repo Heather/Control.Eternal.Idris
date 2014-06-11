@@ -1,23 +1,9 @@
 module Control.Eternal.System.Process
 
-{-
-home : String
-home = case getEnv("HOME") of
-        Just home => home
-        _         => "."
-
-readProcessh : String
-readProcessh = home ++ "/.Idris/readProcess.h"
-
-readProcesso : String
-readProcesso = home ++ "/.Idris/readProcess.o"
-        
-%include C readProcessh
-%link    C readProcesso
--}
-
-%include C "readProcess.h"
-%link    C "readProcess.o"
+-- because I can't use Environment variables here :(
+-- for Linux it should be somewhere else, for sure.
+%include C "C:/Idris/readProcess.h"
+%link    C "C:/Idris/readProcess.o"
 
 %language TypeProviders
 
