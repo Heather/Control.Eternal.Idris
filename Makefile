@@ -23,3 +23,4 @@ install:
 	$(MKDIR) $(DESTDIR)$(IDRISDIR)
 	$(INSTALL) $(LIBS) $(DESTDIR)$(IDRISDIR)/
 	$(INSTALL) $(HEADERS) $(DESTDIR)$(IDRISDIR)/
+	idris --install Control.Eternal.ipkg
