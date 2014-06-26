@@ -5,8 +5,6 @@ module Control.Eternal.System.Process
 %include C "C:/Idris/readProcess.h"
 %link    C "C:/Idris/readProcess.o"
 
-%language TypeProviders
-
 readProcess : String -> IO String
 readProcess cmd = mkForeign (FFun "readProcess" [FString] FString) cmd
 
