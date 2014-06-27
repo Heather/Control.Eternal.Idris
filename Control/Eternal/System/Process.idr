@@ -14,6 +14,3 @@ readProcess' cmd sh =
     let fchar = chr $ if sh then 1
                             else 0
     in mkForeign (FFun "readProcessQ" [FString, FChar] FString) cmd fchar
-
-system : String -> IO()
-system cmd = mkForeign (FFun "system" [FString] FUnit) cmd
