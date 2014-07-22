@@ -3,6 +3,7 @@ module Control.Eternal.Operators.List
 for : List a -> (a -> IO ()) -> IO ()
 for [] f = return ()
 for (x :: xs) f = do f x
+                     for xs f
 
 infixl 2 #
 
