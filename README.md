@@ -7,8 +7,6 @@ Operators
  - Pipe `<|` `|>` `<<|` `|>>` operators
  - various flipped operators
  - `#` alike `!!` in haskell but returns Maybe (more safe ^_^)
- - splitLines
- - startsWith
  - natToFloat
  - round : Float -> Nat
 
