@@ -1,12 +1,12 @@
 module Control.Eternal.Parse
 
 charToInt : Char -> Maybe Int
-charToInt c = let i = cast {to=Int} c in
-              let zero = cast {to=Int} '0' in
-              let nine = cast {to=Int} '9' in
-              if i < zero || i > nine
-                then Nothing
-                else Just (i - zero)
+charToInt c = let i = cast {to=Int} c
+                  zero = cast {to=Int} '0'
+                  nine = cast {to=Int} '9'
+              in if i < zero || i > nine
+                    then Nothing
+                    else Just (i - zero)
 
 total
 parse' : Int -> List Int -> Maybe Int
