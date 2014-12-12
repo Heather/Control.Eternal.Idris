@@ -13,7 +13,7 @@ char* readProcess( char* cmd ) {
     fp = popen(cmd, "r");
     if (fp == NULL) {
         printf("Failed to run command\n" );
-        exit;
+        exit (EXIT_FAILURE);
     }
     while (fgets(path, sizeof(path)-1, fp) != NULL) {
         printf("%s", path);
@@ -35,7 +35,7 @@ char* readProcessQ( char* cmd, char show ) {
     fp = popen(cmd, "r");
     if (fp == NULL) {
         printf("Failed to run command\n" );
-        exit;
+        exit (EXIT_FAILURE);
     }
     while (fgets(path, sizeof(path)-1, fp) != NULL) {
         if (show) printf("%s", path);
