@@ -1,6 +1,6 @@
 module Control.Eternal.Operators
 
-import Control.Eternal.Operators.FSharp
-import Control.Eternal.Operators.String
-import Control.Eternal.Operators.Nat
-import Control.Eternal.Operators.List
+import public Control.Eternal.Operators.FSharp
+import public Control.Eternal.Operators.String
+import public Control.Eternal.Operators.Nat
+import public Control.Eternal.Operators.List

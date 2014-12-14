@@ -1,6 +1,6 @@
 module Control.Eternal
 
-import Control.Eternal.Operators
-import Control.Eternal.Logic
-import Control.Eternal.Parse
-import Control.Eternal.System
+import public Control.Eternal.Operators
+import public Control.Eternal.Logic
+import public Control.Eternal.Parse
+import public Control.Eternal.System

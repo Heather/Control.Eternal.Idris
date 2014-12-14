@@ -1,3 +1,3 @@
 module Control.Eternal.System
 
-import Control.Eternal.System.Process
+import public Control.Eternal.System.Process
