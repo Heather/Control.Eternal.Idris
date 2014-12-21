@@ -1,6 +1,7 @@
 package Control.Eternal
 
 modules = Control.Eternal
+    , Control.Eternal.Operators.Applicative
     , Control.Eternal.Operators.FSharp, Control.Eternal.Operators.List
     , Control.Eternal.Operators.String, Control.Eternal.Operators.Nat
     , Control.Eternal.Operators
