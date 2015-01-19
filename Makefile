@@ -11,14 +11,18 @@ MKDIR ?= $(INSTALL) -d
 IDRISDIR ?= "C:/Idris"
 DESTDIR ?=
 
-ctodo: $(CLIBS)
+readProcess: $(CLIBS)
 	$(CC) ${INCLUDES} -c -o ${LIBS} $^ $(CFLAGS)
 
-.PHONY: clean
+.PHONY: clean idris
 
 clean:
+	idris --clean Control.Eternal.ipkg
 	rm -f ${LIBS}
-    
+
+idris:
+	idris --install Control.Eternal.ipkg
+
 install:
 	$(MKDIR) $(DESTDIR)$(IDRISDIR)
 	$(INSTALL) $(LIBS) $(DESTDIR)$(IDRISDIR)/
