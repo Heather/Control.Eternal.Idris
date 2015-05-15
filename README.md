@@ -11,6 +11,7 @@ Operators
  - `#` alike `!!` in haskell but returns Maybe (more safe ^_^)
  - natToFloat
  - round : Float -> Nat
+ - `splitOn`, `breakOn` for Strings
 
 System
 ------
