@@ -2,11 +2,11 @@ module Control.Eternal.Operators.Nat
 
 import Control.Eternal.Parse
 
-natToFloat : Nat -> Float
-natToFloat O = 0.0
-natToFloat (S n) = 1.0 + (natToFloat n)
+natToDouble : Nat -> Double
+natToDouble O = 0.0
+natToDouble (S n) = 1.0 + (natToDouble n)
 
-round : Float -> Nat
+round : Double -> Nat
 round f =
     let sf = show f
         splitsf = split (== '.') $ unpack sf
@@ -21,10 +21,10 @@ round f =
         minor = case second of
                     Just s => let lenmi = length s
                                   packs = pack s
-                                  parseAsInt : Float = case parseInt packs of
-                                                            Just mi => let flenmi = natToFloat lenmi
+                                  parseAsInt : Double = case parseInt packs of
+                                                            Just mi => let flenmi = natToDouble lenmi
                                                                            nmi = cast {to=Nat} {from=Int} mi
-                                                                           fmi = natToFloat nmi
+                                                                           fmi = natToDouble nmi
                                                                        in (fmi / (10.0 * flenmi))
                                                             _       => 0.0
                               in 0.0 + parseAsInt
