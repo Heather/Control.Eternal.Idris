@@ -6,8 +6,8 @@ CLIBS=src/readProcess.c
 LIBS=readProcess.o
 HEADERS=src/readProcess.h
 INCLUDES = -I src
-INSTALL ?= install
-MKDIR ?= $(INSTALL) -d
+INSTALL ?= cp -rf
+MKDIR ?= mkdir -p
 IDRISDIR ?= "C:/Idris"
 DESTDIR ?=
 
