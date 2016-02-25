@@ -2,6 +2,8 @@ module Control.Eternal.Operators.Nat
 
 import Control.Eternal.Parse
 
+%access public export
+
 natToDouble : Nat -> Double
 natToDouble O = 0.0
 natToDouble (S n) = 1.0 + (natToDouble n)

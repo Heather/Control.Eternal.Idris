@@ -1,5 +1,7 @@
 module Control.Eternal.Logic
 
+%access public export
+
 ifSo :  Lazy (IO ()) -> Bool -> IO ()
 ifSo = flip when
 

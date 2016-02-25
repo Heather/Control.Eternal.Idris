@@ -1,5 +1,7 @@
 module Control.Eternal.Operators.List
 
+%access public export
+
 for : List a -> (a -> IO ()) -> IO ()
 for [] f = return ()
 for (x :: xs) f = do f x

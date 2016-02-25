@@ -1,5 +1,7 @@
 module Control.Eternal.Operators.FSharp
 
+%access public export
+
 infixl 2 <|, |>
 
 (<|) : (a -> b) -> a -> b

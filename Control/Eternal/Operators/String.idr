@@ -1,5 +1,7 @@
 module Control.Eternal.Operators.String
 
+%access public export
+
 breakOn : Char -> String -> (String, String)
 breakOn a = break (== a)
 

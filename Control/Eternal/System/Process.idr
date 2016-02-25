@@ -5,6 +5,8 @@ module Control.Eternal.System.Process
 %include C "C:/Idris/readProcess.h"
 %link    C "C:/Idris/readProcess.o"
 
+%access public export
+
 readProcess : String -> IO String
 readProcess cmd = foreign FFI_C "readProcess" (String -> IO String) cmd
 -- old idris FF:
