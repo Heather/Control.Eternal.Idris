@@ -1,5 +1,7 @@
 module Control.Eternal.Parse
 
+%access public export
+
 charToInt : Char -> Maybe Int
 charToInt c = let i = cast {to=Int} c
                   zero = cast {to=Int} '0'
