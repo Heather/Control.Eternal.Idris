@@ -8,7 +8,7 @@ HEADERS=src/readProcess.h
 INCLUDES = -I src
 INSTALL ?= cp -rf
 MKDIR ?= mkdir -p
-IDRISDIR ?= "/usr/local/idris/"
+IDRISDIR ?= "C:/Idris"
 DESTDIR ?=
 
 readProcess: $(CLIBS)

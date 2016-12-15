@@ -2,8 +2,12 @@ module Control.Eternal.System.Process
 
 -- because I can't use Environment variables here :(
 -- for Linux it should be somewhere else, for sure.
-%include C "C:/Idris/readProcess.h"
-%link    C "C:/Idris/readProcess.o"
+-- windows version:
+-- %include C "C:/Idris/readProcess.h"
+-- %link    C "C:/Idris/readProcess.o"
+
+%include C "/usr/local/idris/readProcess.h"
+%link    C "/usr/local/idris/readProcess.o"
 
 %access public export
 
