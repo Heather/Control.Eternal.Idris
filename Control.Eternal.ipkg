@@ -8,4 +8,4 @@ modules = Control.Eternal
     , Control.Eternal.Logic
     , Control.Eternal.Parse
     , Control.Eternal.System.Process, Control.Eternal.System
-opts = "-p neweffects --total" 
+opts = "-p neweffects --total"

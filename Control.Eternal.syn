@@ -1,5 +1,5 @@
 name : "Control.Eternal.Idris"
 version : 0
 description : "Idris Library"
-bdeps : 
+bdeps :
 rdeps :
