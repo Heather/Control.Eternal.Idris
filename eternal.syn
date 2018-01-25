@@ -1,4 +1,4 @@
-name : "Control.Eternal.Idris"
+name : "eternal"
 version : 0
 description : "Idris Library"
 bdeps :

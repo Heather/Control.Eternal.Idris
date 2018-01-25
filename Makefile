@@ -17,14 +17,14 @@ readProcess: $(CLIBS)
 .PHONY: clean idris
 
 clean:
-	idris --clean Control.Eternal.ipkg
+	idris --clean eternal.ipkg
 	rm -f ${LIBS}
 
 idris:
-	idris --install Control.Eternal.ipkg
+	idris --install eternal.ipkg
 
 install:
 	$(MKDIR) $(DESTDIR)$(IDRISDIR)
 	$(INSTALL) $(LIBS) $(DESTDIR)$(IDRISDIR)/
 	$(INSTALL) $(HEADERS) $(DESTDIR)$(IDRISDIR)/
-	idris --install Control.Eternal.ipkg
+	idris --install eternal.ipkg

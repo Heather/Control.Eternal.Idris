@@ -1,4 +1,4 @@
-package Control.Eternal
+package eternal
 
 modules = Control.Eternal
     , Control.Eternal.Operators.Applicative
